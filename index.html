@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blotec Construções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <img src="imagens/logo-blotec.png" alt="Logo Blotec" class="logo">
+        <h1>Blotec Construções</h1>
+        <p>Excelência em engenharia e reformas.</p>
+    </header>
+
+    
+<section id="galeria-viaduto">
+    <h2>Restauração do Viaduto 13 de Maio</h2>
+    <div class="galeria">
+        <img src="imagens/obra1.jpg" alt="Viaduto - Imagem 1">
+        <img src="imagens/obra2.jpg" alt="Viaduto - Imagem 2">
+        <img src="imagens/obra3.jpg" alt="Viaduto - Imagem 3">
+    </div>
+</section>
+
+<section id="galeria-telhado">
+    <h2>Obras de Telhado</h2>
+    <div class="galeria">
+        <img src="imagens/telhado1.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado2.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado3.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado4.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado5.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado6.jpg" alt="Telhado Blotec">
+        <img src="imagens/telhado7.jpg" alt="Telhado Blotec">
+    </div>
+</section>
+
+
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <form action="https://formspree.io/f/xwkgzkln" method="POST" onsubmit="redirecionarWhatsApp()">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Blotec Construções. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function redirecionarWhatsApp() {
+            setTimeout(function() {
+                window.location.href = "https://wa.me/5511962234955?text=Olá%2C%20acabei%20de%20enviar%20um%20formulário%20no%20site%20da%20Blotec.";
+            }, 1000);
+        }
+    </script>
+
+    <a href="https://wa.me/5511985407513?text=Olá%2C%20quero%20falar%20com%20a%20Blotec." 
+       class="whatsapp-float" target="_blank" rel="noopener" aria-label="Whatsapp">
+       <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+    </a>
+</body>
+
+</html>
